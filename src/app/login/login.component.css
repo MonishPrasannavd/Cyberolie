@@ -1,0 +1,65 @@
+.main-container .px-7{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.main-container .img-logo{
+    width: 250px;
+}
+.main-container .btn-signup{
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 14px;
+    margin-top: 0.75rem;
+    border-radius: 0px;
+}
+.main-container .btn-signup:hover{
+    border: 1px solid var(--primary-color);
+    color: #FFF;
+    background-color: var(--primary-color);
+}
+.login-card{
+    background-color:var(--white-color);
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 7px;
+    padding: 40px;
+    width:400px;
+    max-width: 500px;
+    min-height: 450px;
+    
+}
+.login-card h3{
+    margin-top: 2rem;
+}
+.login-card form{
+    margin-top: 2rem;
+}
+
+.login-card .form-floating > .form-control{
+    height: calc(3rem + calc(var(--bs-border-width)* 1));
+    min-height: calc(3rem + calc(var(--bs-border-width)* 1));
+    line-height: 2;
+}
+
+.login-card .form-control{
+    border:1px solid var(--primary-color);
+    font-size: 14px;
+    color: #757575;
+}
+.login-card .form-floating > .form-control:focus ~ label{
+    color: var(--primary-color);
+    transform: scale(.85) translateY(-2.1rem) translateX(.15rem);
+}
+.login-card .form-floating > label{
+    top: 6px;
+    color: #757575;
+    background-color: transparent;
+    font-size: 14px;
+}
+.login-card .form-floating > .form-control:focus,.login-card .form-floating > .form-control:-webkit-autofill{
+    padding-top: 0.625rem;
+}
+.login-card .form-floating > .form-control:-webkit-autofill ~ label {
+    color: var(--primary-color);
+    transform: scale(.85) translateY(-2.1rem) translateX(.15rem);
+}

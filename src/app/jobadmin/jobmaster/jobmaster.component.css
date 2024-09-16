@@ -1,0 +1,41 @@
+.mt-10{
+    margin-top: 1.5rem;
+}
+
+
+.search .form-control{
+    border: none;
+    padding: .375rem .75rem .375rem .25rem;
+    border-radius: 0px 10px 10px 0px;
+}
+.search .input-group-text{
+    background-color: transparent;
+    border:0px;
+    border-radius: 10px 0px 0px 10px;
+}
+.input-group{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.search .input-group-text i{
+    color: var(--primary-color);
+}
+
+.job-titel{
+    font-weight: 600;
+    color:#0D74B0;
+}
+.job-role{
+    margin: 10px 0px;
+    color: #C4DAE7;
+}
+.post-info{
+    font-size: 12px;
+    /* margin-top: 5px; */
+}
+
+.job-code{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+

@@ -1,0 +1,91 @@
+<div class="container-fluid">
+    <div class="row gx-5">
+        <div class="col-12 col-md-2 col-lg-2 px-0">
+            <app-side-nav></app-side-nav>
+        </div>
+        <div class="col-12 col-md-10 col-lg-10">
+            <div class="row justify-content-between mt-12">
+                <div class="col-6 col-md-2 col-lg-2 text-start">
+                    <button class="btn btn-job" routerLink="/jobadmin/jobMaster">
+                        <i class="bi bi-arrow-left me-1"></i> Back
+                    </button>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
+                    <h3 class="addjob-tilte">
+                        Add New Job
+                    </h3>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 col-xl-3 px-0 text-end">
+                    <app-header></app-header>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 pe-4 mt-13">
+                    <div class="add-job-card">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-10 col-md-4">
+                                    <label for="" class="form-label">Job Title</label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="col-10 col-md-4">
+                                    <label for="" class="form-label">Company Name</label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="col-10 col-md-4">
+                                    <label for="" class="form-label">Location</label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="col-10 col-md-3">
+                                    <label for="" class="form-label">Job Code</label>
+                                    <input type="text" name="" class="form-control">
+                                </div>
+                                <div class="col-10 col-md-3">
+                                    <label for="" class="form-label">Industry</label>
+                                    <select name="" id="" class="form-select">
+                                        <option selected>Select Industry</option>
+                                        <option value="1">Health</option>
+                                        <option value="2">Information </option>
+                                        <option value="3">Others</option>
+                                    </select>
+                                </div>
+                                <div class="col-10 col-md-3">
+                                    <label for="" class="form-label">Employment Type</label>
+                                    <select name="" id="" class="form-select">
+                                        <option selected>Select Employment</option>
+                                        <option value="1">Full Time</option>
+                                        <option value="2">Part Time</option>
+                                        <option value="3">Consulate</option>
+                                    </select>
+                                </div>
+                                <div class="col-10 col-md-3">
+                                    <label for="" class="form-label">Work place type</label>
+                                    <select name="" id="" class="form-select">
+                                        <option selected>Select Work Place</option>
+                                        <option value="1">Remote</option>
+                                        <option value="2">Work Form Office</option>
+                                        <option value="3">Work From Home</option>
+                                    </select>
+                                </div>
+                                <div class="col-10 col-md-12">
+                                    <label for="" class="form-label">Job Overview</label>
+                                    <textarea name="" rows="2" id="" class="form-control"></textarea>
+                                </div>
+                                <!-- <div class="col-10 col-md-6">
+                                    <label for="" class="form-label">Requirements</label>
+                                    <textarea name="" rows="2" id="" class="form-control"></textarea>
+                                </div> -->
+                                <div class="col-10 col-md-12">
+                                    <label for="" class="form-label">Job description</label>
+                                    <!-- <textarea name="" rows="2" id="" class="form-control"></textarea> -->
+                                    <div id="editor-container"></div>
+                                </div>
+                                <div class="col-6 col-md-2 text-center">
+                                    <button class="btn btn-job w-100" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

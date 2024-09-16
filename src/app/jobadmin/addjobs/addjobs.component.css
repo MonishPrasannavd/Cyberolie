@@ -1,0 +1,21 @@
+.mt-21{
+    margin-top: 3.9rem;
+}
+.add-job-card{
+    margin-top:2rem;
+}
+.add-job-card .form-label{
+  margin-top: 15px;
+}
+.add-job-card .form-select{
+    padding: .5rem .75rem;
+}
+.ql-container{
+    border-radius: 0 0 7px 7px;
+}
+.ql-toolbar.ql-snow{
+    border-radius: 5px 5px 0 0 !important;
+}
+.add-job-card .btn-job{
+    margin-top: 7.5rem;
+}

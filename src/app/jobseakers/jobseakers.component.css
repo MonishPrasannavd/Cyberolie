@@ -1,0 +1,16 @@
+.progress, .progress-stacked{
+    width: 70%;
+}
+.btn-pdf{
+    font-size: 13px;
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    color: #FF5822;
+}
+.table thead tr> th:nth-child(8){
+text-align: center !important;
+}

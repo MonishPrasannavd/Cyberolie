@@ -1,0 +1,635 @@
+<div class="container-fluid">
+    <div class="row gx-5">
+        <div class="col-12 col-md-2 col-lg-2 px-0">
+            <app-side-nav></app-side-nav>
+        </div>
+        <div class="col-12 col-md-10 col-lg-10">
+            <div class="row justify-content-between mt-12">
+                <div class="col-6 col-md-2 col-lg-2 text-start">
+                    <div appActiveClass="active">
+                        <a class="btn btn-job" routerLink="/jobadmin/addjobs" routerLinkActive="active">
+                            <span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.6667 0V8.33325H20V0H11.6667ZM18.3332 5H16.6667V6.66675H15V5H13.3332V3.33325H15V1.6665H16.6667V3.33325H18.3332V5Z"
+                                        fill="white" />
+                                    <path
+                                        d="M10 10V5H0V20H18.3333V10H10ZM5.83325 8.33325C6.753 8.33325 7.5 9.0805 7.5 10C7.5 10.9212 6.753 11.6667 5.83325 11.6667C4.91375 11.6667 4.16675 10.9212 4.16675 10C4.16675 9.0805 4.91375 8.33325 5.83325 8.33325ZM9.16675 16.6667H2.5V15C2.5 14.0837 3.25025 13.3332 4.16675 13.3332H7.5C8.41625 13.3332 9.16675 14.0837 9.16675 15V16.6667ZM15.8333 16.6667H11.6667V15H15.8333V16.6667ZM15.8333 13.3332H11.6667V11.6667H15.8333V13.3332Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            Add New Job
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 col-xl-3 text-center">
+                    <h3 class="addjob-tilte">
+                        Job Details
+                    </h3>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3 col-xl-3 pe-0 text-end">
+                    <app-header></app-header>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 mt-20">
+                    <div class="row justify-content-between">
+                        <div class="col-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <form>
+                                <div class="row justify-content-start">
+                                    <div class="col-6 col-md-5 col-lg-5">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Search Industry</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 col-md-5 col-lg-5">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Search Job Role</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 col-md-2 col-lg-2">
+                                        <button class="btn btn-job rounded-3">Apply</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 pe-3">
+                            <div class="search">
+                                <form action="">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><i
+                                                class="fa-solid fa-magnifying-glass"></i></span>
+                                        <input type="text" class="form-control" placeholder="Search..">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 mt-10">
+                    <div class="main-job-card">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="card job-card">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Job title</h5>
+
+                                            <p class="job-code">(12468)</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-geo-alt-fill"></i>
+                                                Location</h6>
+                                            <h6 class="post-info text-secondary">Posted: 12-20-2024</h6>
+                                        </div>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Aliquid voluptatibus illum officia hic, veritatis possimus molestias.</p>
+                                        <div class="row mt-3">
+                                            <div class="col-12 col-md-7 col-lg-7"> 
+                                                    <button type="button" class=" btn-view me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                       <span>
+                                                        <img src="assets/logos/eye.svg" alt="" >
+                                                       </span>
+                                                    </button>
+
+                                                    <button class="btn btn-card"> 
+                                                        More Details
+                                                    </button>
+
+                                            </div>
+                                            <div class="col-12 col-md-5 col-lg-5 text-center">
+                                                <button type="button" class="btn btn-card" data-bs-toggle="modal"
+                                                    data-bs-target="#delete">Delete
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn close-btn" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="job-titel">Job Title</h3>
+                <h6 class="job-role">Role Overview:</h6>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae corrupti deserunt praesentium
+                    accusamus dolor, veritatis perspiciatis deleniti ad adipisci, hic at similique cum, voluptas tempore
+                    sequi ullam ducimus quisquam facilis?</p>
+                <h6 class="job-role">Responsibilities:</h6>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur accusantium, asperiores ea.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur accusantium, asperiores ea.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur accusantium, asperiores ea.
+                    </li>
+                </ul>
+                <h6 class="job-role">
+                    Qualifications and Skills Required:
+                </h6>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur accusantium, asperiores ea.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur accusantium, asperiores ea.
+                    </li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur accusantium, asperiores ea.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-center ">
+                <h5 class="modal-title w-100" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn close-btn" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-circle"></i></button>
+            </div>
+            <div class="modal-body text-center">
+                <h6 class="info-text">Are you sure you want to delete this job post</h6>
+                <button type="button" class="btn btn-no btn-confirm" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-yes btn-confirm">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
