@@ -14,3 +14,21 @@
 .table thead tr> th:nth-child(8){
 text-align: center !important;
 }
+.search .form-control{
+    border: none;
+    padding: .375rem .75rem .375rem .25rem;
+    border-radius: 0px 10px 10px 0px;
+}
+.search .input-group-text{
+    background-color: transparent;
+    border:0px;
+    border-radius: 10px 0px 0px 10px;
+}
+.search .input-group{
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px; */
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    border-radius: 10px;
+}
+.search .input-group-text i{
+    color: var(--primary-color);
+}

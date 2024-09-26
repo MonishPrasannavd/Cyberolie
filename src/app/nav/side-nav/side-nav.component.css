@@ -28,16 +28,12 @@
 .list-group-item {
     cursor: pointer;
     font-size: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 4rem; /* Use padding instead of margin for alignment */
+    text-align: left; /* Ensures text is aligned to the left */
 }
 .list-group-item a{
     text-decoration: none;
     color: var(--white-color);
-}
-
-.active a{
-    color: var(--primary-color);
 }
 
 
@@ -46,6 +42,10 @@
     width: 18px;
     margin-right: 5px;
     vertical-align: sub;
+}
+.list-group-item.active{
+    padding-left: 4rem; /* Keep padding consistent in active state */
+    text-align: left;
 }
 
 .list-group-item.active svg {
@@ -63,6 +63,9 @@
 
 .settings li {
     margin-bottom: 10px;
+    text-align: center;
+    padding-left:0rem ;
+    margin-left: 10px;
 }
 
 .settings {

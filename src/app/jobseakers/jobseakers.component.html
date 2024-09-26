@@ -42,12 +42,13 @@
                         </div>
                         <div class="col-6 col-md-3 col-lg-3 pe-3">
                             <div class="search">
-                                <div class="input-group flex-nowrap">
-                                    <span class="input-group-text" id="addon-wrapping"><i
-                                            class="fa-solid fa-magnifying-glass"></i></span>
-                                    <input type="text" class="form-control" placeholder="Search.." aria-label="Username"
-                                        aria-describedby="addon-wrapping">
-                                </div>
+                                <form action="">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1"><i
+                                                class="fa-solid fa-magnifying-glass"></i></span>
+                                        <input type="text" class="form-control" placeholder="Search..">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 col-lg-12 mt-10">
@@ -315,7 +316,10 @@
                                     </div>
                                     <div class="col-12 col-md-5 col-lg-5">
                                         <div class="d-flex justify-content-end">
-                                            <button class="btn btn-upload me-3"><i class="bi bi-upload"></i> Upload Csv</button>
+                                            <button class="btn btn-upload me-3" (click)="fileInput.click()">
+                                                <i class="bi bi-upload"></i> Upload CSV
+                                            </button>
+                                            <input type="file" #fileInput (change)="onFileChange($event)" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" style="display: none;">
                                             <button class="btn btn-upload"><i class="bi bi-download"></i> Export Csv</button>
                                         </div>
                                     </div>
