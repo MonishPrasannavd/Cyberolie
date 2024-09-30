@@ -64,7 +64,12 @@
     transform: scale(.85) translateY(-2.1rem) translateX(.15rem);
 }
 @media (max-width:1200px) {
-    .main-job-card {
-        height: 535px;
+    .login-card{
+        margin-top: 0.5rem;
+        border-radius: 7px;
+        padding: 30px;
+        width:350px;
+        max-width: 400px;
+        min-height: 350px;
     }
 }
