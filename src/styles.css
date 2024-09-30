@@ -339,6 +339,11 @@ p {
         height: 535px;
     }
 }
+@media (max-width:1200px) {
+    .main-job-card {
+        height: 535px;
+    }
+}
 
 .pagination {
     gap: 7px;
