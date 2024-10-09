@@ -1,0 +1,244 @@
+.main-banner{
+    position: relative;
+    background-image:linear-gradient(270deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.55) 101.02%), url("../../assets/images/banner.jpg");
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+@media (max-width:992px){
+    .main-banner{
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+.contact-head{
+    display: flex;
+    justify-content: end;
+}
+.mail-head i{
+    /* font-size: 15px; */
+    color: #fff;
+    margin-right: 5px;
+}
+.mail-head span{
+    color: #fff;
+    /* font-size: 15px; */
+}
+.timings{
+    border-right: 1px solid #fff;
+    margin-left: 20px;
+}
+.nav-nav{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(155,155,155,0.4);
+}
+.bg-body-tertiary{
+    background-color: transparent !important;
+}
+.navbar-nav{
+    --bs-navbar-color: #fff !important;
+}
+.active{
+    width: 100% !important;
+    padding: 5px 6px;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    background-color:transparent;
+    border-radius: 20px !important;
+}
+.nav-item{
+    padding: 20px !important;
+}
+.nav-link:hover{
+    color: #fff !important;
+}
+.img-fluid{
+    width: 70%;
+}
+.btn{
+    padding: 14px 30px;
+    border-radius: 0px !important;
+}
+.btn i{
+    margin-left: 5px;
+}
+.btn:hover{
+    background-color: #fff !important;
+}
+.btn:active{
+    color: #000 !important;
+}
+.banner-label{
+    color: #fff;
+    width: fit-content;
+    border: 1px solid rgba(155,155,155,0.2);
+    padding: 4px 8px;
+}
+.banner-content{
+    margin: 150px 0px 0px 45px;
+}
+.banner-content h1{
+    color: #fff;
+    font-size:4.5rem;
+    margin:10px 0px 17px 0px;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 16px;
+}
+.transparent-name{
+    color: rgba(155,155,155,0.4);
+    font-size: 11rem;
+    margin-top: 15.5rem;
+}
+.btn-job{
+    border-radius: 10px !important;
+}
+.form-select{
+    margin-top: 0.5rem;
+}
+.filter-content{
+    display: flex;
+    align-items: center;
+    margin-left: 4.4rem;
+}
+.jobs-body{
+    background-color: #f4f9fd;
+}
+.card{
+    border: none !important;
+    box-shadow:0px 0px 5px 1px rgba(0, 0,0, 0.1);
+    border-radius: 0px !important;
+}
+.card-title{
+    font-size: 30px;
+    font-weight: 500;
+}
+.text-body-secondary{
+    color: #000 !important;
+}
+.card-text{
+    color: #333333 !important;
+}
+.card .card-body .btn{
+    color: #fff !important;
+    font-size: 13px !important;
+    padding: 0px 20px !important;
+    background: linear-gradient(to right, rgb(92, 219, 254) ,rgb(199, 100, 255));
+    border: 0px !important;
+}
+.card-button{
+    color: #fff;
+    font-size: 12px;
+    background-color: #000;
+    text-decoration: none;
+    padding: 7px 30px;
+    border-radius: 4px;
+}
+.footer{
+    background-color: #0a141d;
+    padding:50px 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content:space-around;
+}
+.contact-info{
+    border: 1px solid #fff;
+    padding: 20px 40px;
+}
+.contact-info ul{
+    padding: 0 !important;
+}
+.stay-connect{
+    display: flex;
+    align-items: center;
+}
+.stay-connect h2{
+    color: #fff;
+}
+.stay-connect a{
+    color: #cacabf;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.stay-connect a i{
+    margin-left: 5px;
+}
+.content-content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+}
+.phone-icon{
+    width:40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-content a{
+    color: #cacabf;
+    font-size: 16px;
+    text-decoration: none;
+}
+.quick-links{
+    padding: 20px 20px;
+}
+.link-nav ul{
+    padding: 0 !important;
+}
+.link-nav li a{
+    font-size: 17px !important;
+}
+.footer-logo{
+    border: 1px solid rgba(155,155,155,0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo .footer-image{
+    background-color: #1a232c;
+}
+.footer-image .img-fluid{
+    padding: 20px 40px;
+    width: 100%;
+}
+.privacy-policy{
+    display:flex;
+    justify-content: space-around;
+}
+.privacy-policy a{
+    font-size: 17px !important;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 15x;
+}
+.footer-bottom p span{
+    color:  #cacaca;
+}
+.bottom-logos{
+    display: flex;
+    justify-content:end ;
+    gap: 20px;
+}
+.bottom-logos svg{
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
