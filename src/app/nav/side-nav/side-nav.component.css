@@ -74,8 +74,14 @@
 .mt-11{
     margin-top: 1.9rem;
 }
+@media (max-width:1300px){
+    .settings {
+        margin-top: 15vh;
+    }
+}
 @media (min-width:992px) {
     .nav-logo svg{
         width: 170px ;
     }
   }
+
