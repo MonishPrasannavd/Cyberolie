@@ -70,10 +70,13 @@
 .img-fluid{
     width: 70%;
 }
+.form-select{
+    padding: 10px;
+}
 .btn{
     font-family: 'Montserrat',serif;
     font-weight: 500;
-    padding:20px 40px;
+    padding:10px 20px;
     border-radius: 0px !important;
 }
 .btn i{
